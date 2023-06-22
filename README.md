@@ -1,4 +1,4 @@
-project_name
+WaterSeg
 ==============================
 
 A short description of the project.
