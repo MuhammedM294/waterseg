@@ -7,11 +7,10 @@ import os
 import torch
 import albumentations as A
 
-IMAGE_SIZE = (1024, 1024)
 
 
 class SegmentationDataset(Dataset[any]):
-    def __init__(self, df:pd.DataFrame, train:bool, resize: bool = None,transform =None, augment:A.Compose = None, device:str = 'cuda'):
+    def __init__(self, df:pd.DataFrame, train:bool, resize: tuple = None,transform =None, augment:A.Compose = None, device:str = 'cuda'):
         self.df = df
         self.train = train
         self.resize = resize
@@ -38,25 +37,26 @@ class SegmentationDataset(Dataset[any]):
         image = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
         image = image /255.0
         if self.resize: 
-            image =  cv2.resize(image, IMAGE_SIZE)
+            image =  cv2.resize(image, self.resize)
         return image
     
     def get_mask(self, idx:int):
         mask_path = self.df.iloc[idx, 4]
         mask = cv2.imread(mask_path, cv2.IMREAD_UNCHANGED)
         if self.resize: 
-            mask = cv2.resize(mask, IMAGE_SIZE)
+            mask = cv2.resize(mask, self.resize)
         return mask
     
     def preprocess(self, image:np.array,    mask:np.array):
-        
-        if self.augment:
 
+        image = np.expand_dims(image, axis=-1)
+        mask = np.expand_dims(mask, axis=-1)
+        if self.augment:
             data =self.augment()(image = image,mask = mask)
             image = data['image']
             mask = data['mask']
-        image = torch.tensor(image, dtype=torch.float32)
-        mask = torch.tensor(mask, dtype=torch.float32)
+        image = torch.tensor(image, dtype=torch.float32).permute(2,0,1)
+        mask = torch.tensor(mask, dtype=torch.float32).permute(2,0,1)
        
         return image, mask
 
@@ -74,11 +74,11 @@ def train_augmentation():
 
 
 
-def create_dataloader(df:pd.DataFrame, train:bool, 
+def create_dataloader(df:pd.DataFrame, train:bool, resize: tuple = None,
                       transform:transforms.Normalize = None, augment:A.Compose = None, 
-                      batch_size:int = 1, shuffle:bool = True, drop_last:bool = False):
+                      batch_size:int = 1, shuffle:bool = True, drop_last:bool = False , device:str = 'cuda'):
   
-    dataset = SegmentationDataset(df, train, transform, augment)
+    dataset = SegmentationDataset(df, train,resize, transform, augment , device)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle , drop_last=drop_last)
 
     return dataloader
