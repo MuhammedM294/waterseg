@@ -72,6 +72,29 @@ The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar
 2. Limited training data: The imagery acquisition platform, Sentinel-1B, was taken out of service at the end of 2021. As a result, there have been no available images of the lakes of Toushka since the beginning of 2022.
 3. Annotation Difficulty: SAR imagery is difficult to interpret, so the process of annotating the satellite imagery to prepare the datasets for training and evaluation was challenging and time-consuming.
 
+
+## Results Analysis
+The evaluation of the segmentation models over 25 epochs of training reveals that the RGB with DEM model outperforms the other three models in terms of various performance metrics, including model loss value, pixel accuracy, F1 score, and Intersection over Union (IoU). This indicates the effectiveness of incorporating both RGB SAR imagery and Digital Elevation Model (DEM) data for waterbodies segmentation in the lakes of Toushka.
+
+
+##### 1. Validation Loss Value
+   
+ <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/5aa65e4e-4c06-4f5a-bf38-4a3391bb2bbc" width="750" height="600"  /> 
+
+##### 2. Validation Pixel accuracy 
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/5880d0ba-8e0f-46f5-8b0c-9dbc2ed06786" width="750" height="600"  /> 
+
+##### 3. Validation F1_score
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/d95c4947-a0c4-4d37-ae87-eeb4964e271f" width="750" height="600"  /> 
+
+##### 4. Validation IoU
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/6f6cfd1e-225d-482d-a594-1cd42661ea8b" width="750" height="600"  /> 
+
+
+
 ## Installation 
 1. Clone the repository:
    ``` shell
