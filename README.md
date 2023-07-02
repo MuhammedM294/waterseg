@@ -7,7 +7,7 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 
 ## Table of Contents
 
-- **Project Description**
+- [**Project Description**](#project_des)
 - **Study Area**
 - **Datasets**
 - **Challenges**
@@ -19,7 +19,7 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 - **License**
 
 
-## Project Description 
+## Project Description <a name="project_des"></a>
 
 The objective of this project is to develop a deep learning model that can accurately identify the water bodies of Toushka Lakes from SAR imagery. The segmentation task involves classifying each pixel in SAR satellite imagery as either water or non-water. This information can be valuable for various applications, such as environmental monitoring, water resource management, and urban planning.
 
