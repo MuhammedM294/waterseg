@@ -11,7 +11,6 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 - **Study Area**
 - **Datasets**
 - **Challenges** 
-- **Features**
 - **Installation**
 - **Usage**
 - **Contributing**
@@ -69,11 +68,11 @@ The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar
  
 
 ## Challenges
-1. The similarity of intensity values of water bodies and the surrounding land cover of the desert, always leads to the misclassification of many land pixels as water bodies.
-2. 
+1. The similarity of intensity values of water bodies and the surrounding land cover of the desert, always leads to the misclassification of many land pixels as water bodies. This is the main reason for integrating the elevation information. 
+2. Limited training data: The imagery acquisition platform, Sentinel-1B, was taken out of service at the end of 2021. As a result, there have been no available images of the lakes of Toushka since the beginning of 2022.
+3. Annotation Difficulty: SAR imagery is difficult to interpret, so the process of annotating the satellite imagery to prepare the datasets for training and evaluation was challenging and time-consuming.
 
 
-3. Limited Training Data: 
 ### Contributing
 
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open a new issue or submit a pull request.
