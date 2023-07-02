@@ -8,15 +8,15 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 ## Table of Contents
 
 - [**Project Description**](#project_des)
-- **Study Area**
-- **Datasets**
-- **Challenges**
-- **Results Analysis**
-- **Citing**
-- **Installation**
-- **Contributing**
-- **Acknowledgement**
-- **License**
+- [**Study Area**](#study_area)
+- [**Datasets**](#dataset)
+- [**Challenges**](#challenge)
+- [**Results Analysis**](#res_analsis)
+- [**Installation**](#install)
+- [**Citing**](#citing)
+- [**Contributing**](#contribute)
+- [**Acknowledgement**](#ack)
+- [**License**](#lic)
 
 
 ## Project Description <a name="project_des"></a>
@@ -25,7 +25,7 @@ The objective of this project is to develop a deep learning model that can accur
 
 The U-Net architecture is chosen for its effectiveness in image segmentation tasks. It consists of an encoder path that captures contextual information and a decoder path that enables precise localization. The PyTorch framework provides a powerful and flexible environment for building and training deep learning models.
 
-## Study Area 
+## Study Area <a name="study_area"></a>
 
 The lakes are natural depressions in the Sahara Desert that are filled by overflow from Lake Nasser, the enormous 550-kilometer-long (340-mile) reservoir built on the Nile River. Lake Nasser appears in the 2021 image (far right).The rise and fall of Toshka Lakes depend on multi-year fluctuations in the flow of the Nile. 
 
@@ -34,7 +34,7 @@ The lakes are natural depressions in the Sahara Desert that are filled by overfl
 <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/71252087-337a-450e-8168-3b39ec30b29a" width = "1000" height="650" />
 
 
-## Dataset 
+## Dataset <a name="dataset"></a>
 
 The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar (SAR) imagery 2019-2021. SAR data offers valuable information for waterbodies segmentation due to its ability to penetrate cloud cover and capture images regardless of the weather conditions. The dataset was prepared by preprocessing the SAR imagery and creating four different datasets to facilitate the segmentation task. The datasets are annotated with accurate waterbody boundaries, serving as ground truth for training and evaluation.
 
@@ -69,13 +69,13 @@ The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar
  The fourth dataset combines the RGB SAR image (with VV, VH, and VV/VH bands) with the DEM data. This dataset provides a comprehensive representation by integrating SAR imagery, polarization information, and terrain features.
  
 
-## Challenges
+## Challenges <a name="challenge"></a>
 1. The similarity of intensity values of water bodies and the surrounding land cover of the desert, always leads to the misclassification of many land pixels as water bodies. This is the main reason for integrating the elevation information. 
 2. Limited training data: The imagery acquisition platform, Sentinel-1B, was taken out of service at the end of 2021. As a result, there have been no available images of the lakes of Toushka since the beginning of 2022.
 3. Annotation Difficulty: SAR imagery is difficult to interpret, so the process of annotating the satellite imagery to prepare the datasets for training and evaluation was challenging and time-consuming.
 
 
-## Results Analysis
+## Results Analysis <a name="res_analsis"></a>
 The evaluation of the segmentation models over 25 epochs of training reveals that the RGB with DEM model outperforms the other three models in terms of various performance metrics, including model loss value, pixel accuracy, F1 score, and Intersection over Union (IoU). This indicates the effectiveness of incorporating both RGB SAR imagery and Digital Elevation Model (DEM) data for waterbodies segmentation in the lakes of Toushka.
 
 
@@ -129,7 +129,7 @@ The evaluation of the segmentation models over 25 epochs of training reveals tha
 <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/f5ed7170-db92-4309-950d-1a11ecff2d7c" width="750" height="600"  /> 
 
 
-## Installation 
+## Installation  <a name="install"></a>
 1. Clone the repository:
    ``` shell
    git clone https://github.com/MuhammedM294/waterseg.git
@@ -151,7 +151,7 @@ The evaluation of the segmentation models over 25 epochs of training reveals tha
      pip install -r requirements.txt
  ```
 
-##  Citing 
+##  Citing  <a name="citing"></a>
 ```
 {
   Author = {Muhammed Abdelaal},
@@ -162,15 +162,15 @@ The evaluation of the segmentation models over 25 epochs of training reveals tha
   Howpublished = {\url{https://github.com/MuhammedM294/waterseg}}
 }
 ```
-## Contributing
+## Contributing <a name="contribute"></a>
 
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open a new issue or submit a pull request.
 
-## Acknowledgement
+## Acknowledgement <a name="ack"></a>
 
 [NASA Earth Observatory](https://earthobservatory.nasa.gov/)
 
-### License
+### License <a name="lic"></a>
 
 This project is licensed under the MIT License.
 
