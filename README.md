@@ -167,7 +167,8 @@ The evaluation of the segmentation models over 25 epochs of training reveals tha
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open a new issue or submit a pull request.
 
 ## Acknowledgement
-1. [NASA Earth Observatory](https://earthobservatory.nasa.gov/)
+
+[NASA Earth Observatory](https://earthobservatory.nasa.gov/)
 
 ### License
 
