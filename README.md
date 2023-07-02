@@ -1,7 +1,7 @@
-WaterSeg
+WaterSeg: Lake Toushka Waterbodies Segmentation
 ==============================
 
-A short description of the project.
+This project aims to perform waterbodies segmentation of Toushka lakes, located in the southern desert of Egypt. The segmentation task is achieved using the PyTorch framework and the U-Net architecture.
 
 Project Organization
 ------------
