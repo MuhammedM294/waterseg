@@ -10,9 +10,9 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 - **Project Description**
 - **Study Area**
 - **Datasets**
-- **Challenges** 
+- **Challenges**
+- **Citing**
 - **Installation**
-- **Usage**
 - **Contributing**
 - **License**
 
@@ -72,8 +72,40 @@ The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar
 2. Limited training data: The imagery acquisition platform, Sentinel-1B, was taken out of service at the end of 2021. As a result, there have been no available images of the lakes of Toushka since the beginning of 2022.
 3. Annotation Difficulty: SAR imagery is difficult to interpret, so the process of annotating the satellite imagery to prepare the datasets for training and evaluation was challenging and time-consuming.
 
+## Installation 
+1. Clone the repository:
+   ``` shell
+   git clone https://github.com/MuhammedM294/waterseg.git
+   ```
+   
+2. Change to the project directory:
+   ``` shell
+   cd waterseg
+   ```
+   
+3. Setting up an environment to run the project:
+   ``` shell
+     conda create --n <environment-name> 
+     conda activate <environment-name>
+   ```
+   
+4. Install the required dependencies::
+ ``` shell
+     pip install -r requirements.txt
+ ```
 
-### Contributing
+##  Citing 
+```
+{
+  Author = {Muhammed Abdelaal},
+  Title = {Toushka Lakes Water Bodies Semantic Segmentation PyTorch},
+  Year = {2023},
+  Publisher = {GitHub},
+  Journal = {GitHub repository},
+  Howpublished = {\url{https://github.com/MuhammedM294/waterseg}}
+}
+```
+## Contributing
 
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open a new issue or submit a pull request.
 
