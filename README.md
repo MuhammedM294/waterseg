@@ -13,7 +13,7 @@ This project aims to perform waterbodies segmentation of Toushka Lakes, located 
 - **License**
 
 
-## Project Description <a name="ProjectDescription"></a>
+# Project Description <a name="ProjectDescription"></a>
 
 The objective of this project is to develop a deep learning model that can accurately identify the water bodies of Toushka Lakes. The segmentation task involves classifying each pixel in satellite imagery as either water or non-water. This information can be valuable for various applications, such as environmental monitoring, water resource management, and urban planning.
 
