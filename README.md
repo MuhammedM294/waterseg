@@ -11,6 +11,7 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 - **Study Area**
 - **Datasets**
 - **Challenges**
+- **Results Analysis**
 - **Citing**
 - **Installation**
 - **Contributing**
@@ -79,19 +80,35 @@ The evaluation of the segmentation models over 25 epochs of training reveals tha
 
 ##### 1. Validation Loss Value
    
- <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/5aa65e4e-4c06-4f5a-bf38-4a3391bb2bbc" width="750" height="600"  /> 
+ <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/5aa65e4e-4c06-4f5a-bf38-4a3391bb2bbc" width="750" height="500"  /> 
 
 ##### 2. Validation Pixel accuracy 
 
-<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/5880d0ba-8e0f-46f5-8b0c-9dbc2ed06786" width="750" height="600"  /> 
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/5880d0ba-8e0f-46f5-8b0c-9dbc2ed06786" width="750" height="500"  /> 
 
 ##### 3. Validation F1_score
 
-<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/d95c4947-a0c4-4d37-ae87-eeb4964e271f" width="750" height="600"  /> 
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/d95c4947-a0c4-4d37-ae87-eeb4964e271f" width="750" height="500"  /> 
 
 ##### 4. Validation IoU
 
-<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/6f6cfd1e-225d-482d-a594-1cd42661ea8b" width="750" height="600"  /> 
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/6f6cfd1e-225d-482d-a594-1cd42661ea8b" width="750" height="500"  /> 
+
+### Prediction Samples
+
+`Original Image`      `Ground Truth Mask`
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/f12133ed-8e8f-4f20-bbdf-359b4d2995f1" width="500" height="400"  /> 
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/3d2ec371-9d13-4d0b-a0ac-d92b7a9d8377" width="500" height="400"  /> 
+
+
+`VV Model Predicted Mask`
+
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/9e7ad222-e9a4-4d18-857c-1850b3b230f8" width="500" height="400"  /> 
+
+
 
 
 
