@@ -1,5 +1,5 @@
 # WaterSeg: Lake Toushka Waterbodies Segmentation
-==============================
+
 
 This project aims to perform waterbodies segmentation of Toushka Lakes, a chain of lakes in southern Egypt’s New Valley. The ambitious Toshka Lakes project was designed to provide irrigation for new agricultural developments, and to attract people to the region and away from the dense populations of the Nile Valley itself. 
 
