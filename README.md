@@ -96,20 +96,36 @@ The evaluation of the segmentation models over 25 epochs of training reveals tha
 
 ### Prediction Samples
 
-`Original Image`      `Ground Truth Mask`
+#### `Original Image`      
 
-<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/f12133ed-8e8f-4f20-bbdf-359b4d2995f1" width="500" height="400"  /> 
-
-<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/3d2ec371-9d13-4d0b-a0ac-d92b7a9d8377" width="500" height="400"  /> 
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/f12133ed-8e8f-4f20-bbdf-359b4d2995f1" width="750" height="600"  /> 
 
 
-`VV Model Predicted Mask`
+#### `Ground Truth Mask`
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/3d2ec371-9d13-4d0b-a0ac-d92b7a9d8377" width="750" height="600"  /> 
 
 
-<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/9e7ad222-e9a4-4d18-857c-1850b3b230f8" width="500" height="400"  /> 
+#### `VV Model Predicted Mask`
 
 
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/9e7ad222-e9a4-4d18-857c-1850b3b230f8" width="750" height="600"  /> 
 
+#### `RGB Model Predicted Mask`
+
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/bdec3193-815e-4468-86db-b5b6ba9acea9" width="750" height="600"  /> 
+
+
+#### `VV+DEM Model Predicted Mask`
+
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/2f64ef03-5680-44cb-916f-d102557359e6" width="750" height="600"  /> 
+
+#### `RGB+DEM Model Predicted Mask`
+
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/f5ed7170-db92-4309-950d-1a11ecff2d7c" width="750" height="600"  /> 
 
 
 ## Installation 
