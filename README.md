@@ -1,57 +1,32 @@
-WaterSeg: Lake Toushka Waterbodies Segmentation
+# WaterSeg: Lake Toushka Waterbodies Segmentation
 ==============================
 
-This project aims to perform waterbodies segmentation of Toushka lakes, located in the southern desert of Egypt. The segmentation task is achieved using the PyTorch framework and the U-Net architecture.
+This project aims to perform waterbodies segmentation of Toushka Lakes, located in the southern desert of Egypt. The segmentation task is achieved using the PyTorch framework and the U-Net architecture.
 
-Project Organization
-------------
+## Table of Contents
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+- [Project Description](#ProjectDescription)
+- **Features**
+- **Installation**
+- **Usage**
+- **Contributing**
+- **License**
 
 
---------
+## Project Description <a name="ProjectDescription"></a>
+
+The objective of this project is to develop a deep learning model that can accurately identify the water bodies of Toushka Lakes. The segmentation task involves classifying each pixel in satellite imagery as either water or non-water. This information can be valuable for various applications, such as environmental monitoring, water resource management, and urban planning.
+
+The U-Net architecture is chosen for its effectiveness in image segmentation tasks. It consists of an encoder path that captures contextual information and a decoder path that enables precise localization. The PyTorch framework provides a powerful and flexible environment for building and training deep learning models.
+
+### Contributing
+
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open a new issue or submit a pull request.
+
+
+### License
+
+This project is licensed under the MIT License.
+
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
