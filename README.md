@@ -9,7 +9,8 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 
 - **Project Description**
 - **Study Area**
-- **Datasets** 
+- **Datasets**
+- **Challenges** 
 - **Features**
 - **Installation**
 - **Usage**
@@ -34,7 +35,7 @@ The lakes are natural depressions in the Sahara Desert that are filled by overfl
 
 ## Dataset 
 
-The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar (SAR) imagery. SAR data offers valuable information for waterbodies segmentation due to its ability to penetrate cloud cover and capture images regardless of the weather conditions. The dataset was prepared by preprocessing the SAR imagery and creating four different datasets to facilitate the segmentation task. The datasets are annotated with accurate waterbody boundaries, serving as ground truth for training and evaluation.
+The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar (SAR) imagery 2019-2021. SAR data offers valuable information for waterbodies segmentation due to its ability to penetrate cloud cover and capture images regardless of the weather conditions. The dataset was prepared by preprocessing the SAR imagery and creating four different datasets to facilitate the segmentation task. The datasets are annotated with accurate waterbody boundaries, serving as ground truth for training and evaluation.
 
 #### 1. VV Band Dataset
  This dataset contains SAR images with only the VV (Vertical-Vertical) polarization band. The VV band provides valuable information about the backscatter intensity, which is essential for distinguishing waterbodies from surrounding land cover.
@@ -67,11 +68,12 @@ The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar
  The fourth dataset combines the RGB SAR image (with VV, VH, and VV/VH bands) with the DEM data. This dataset provides a comprehensive representation by integrating SAR imagery, polarization information, and terrain features.
  
 
-### The main challenges encountered during this project included:
+## Challenges
 1. The similarity of intensity values of water bodies and the surrounding land cover of the desert, always leads to the misclassification of many land pixels as water bodies.
+2. 
 
 
-2. Limited Training Data: 
+3. Limited Training Data: 
 ### Contributing
 
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open a new issue or submit a pull request.
