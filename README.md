@@ -31,7 +31,7 @@ The lakes are natural depressions in the Sahara Desert that are filled by overfl
 
 ``Image Date: November 30, 2021``
 
-<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/71252087-337a-450e-8168-3b39ec30b29a" width = "1000" height="650" />
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/71252087-337a-450e-8168-3b39ec30b29a" width = "1000" height="600" />
 
 
 ## Dataset <a name="dataset"></a>
@@ -109,10 +109,20 @@ The evaluation of the segmentation models over 25 epochs of training reveals tha
 
 #### `VV Model Predicted Mask`
 
+##### Best VV Model metrics (after 15 epochs)
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/dac66099-c6a1-4d3e-8091-5aa74c5ff126" width="750" height="120"  /> 
+
 
 <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/9e7ad222-e9a4-4d18-857c-1850b3b230f8" width="750" height="600"  /> 
 
-#### `RGB Model Predicted Mask`
+
+#### `RGB Model Predicted Mask
+
+##### Best RGB Model metrics (after 15 epochs)
+
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/35a517c2-380c-4927-b0f6-6f8a09633256" width="750" height="120"  /> 
 
 
 <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/bdec3193-815e-4468-86db-b5b6ba9acea9" width="750" height="600"  /> 
@@ -120,11 +130,19 @@ The evaluation of the segmentation models over 25 epochs of training reveals tha
 
 #### `VV+DEM Model Predicted Mask`
 
+##### Best VV+DEM Model metrics (after 21 epochs)
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/249df635-0a9f-41e8-99e2-2769f554f15a" width="750" height="120"  /> 
+
 
 <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/2f64ef03-5680-44cb-916f-d102557359e6" width="750" height="600"  /> 
 
+
 #### `RGB+DEM Model Predicted Mask`
 
+##### Best RGB+DEM Model metrics (after 23 epochs)
+
+<img src="https://github.com/MuhammedM294/waterseg/assets/89984604/f7369e5c-3b5b-415e-9d3b-749f6466a8d6" width="750" height="120"  /> 
 
 <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/f5ed7170-db92-4309-950d-1a11ecff2d7c" width="750" height="600"  /> 
 
