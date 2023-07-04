@@ -1,7 +1,7 @@
 import torch.optim as optim
 from tqdm import tqdm
 import torch
-from src.models.metrics import Metrics
+from models.metrics import Metrics
 
 
 def train_fn(train_dataloader, model, optimizer , metrics):

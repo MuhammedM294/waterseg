@@ -1,6 +1,6 @@
 import torch
 from tqdm import tqdm
-from src.models.metrics import Metrics
+from models.metrics import Metrics
 
 def eval_fn(valid_dataloader, model , metrics):
     """
