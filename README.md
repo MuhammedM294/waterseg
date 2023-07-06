@@ -26,7 +26,11 @@ The U-Net architecture is chosen for its effectiveness in image segmentation tas
 
 1. The encoder path, also known as the contracting path, is responsible for capturing contextual information from the input image. 
 2. The decoder path, also known as the expansive path, aims to enable precise localization by upsampling the feature maps and recovering the spatial information lost during the encoding process.
-   
+
+   <img src="https://github.com/MuhammedM294/waterseg/assets/89984604/490e9460-4b06-470a-addf-e803118c6529" width = "1000" height="600" />
+  
+
+
 
 ## Study Area <a name="study_area"></a>
 
