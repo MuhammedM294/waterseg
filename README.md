@@ -43,9 +43,10 @@ The lakes are natural depressions in the Sahara Desert that are filled by overfl
 
 ## Dataset <a name="dataset"></a>
 
-The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar (SAR) imagery from 2019 to 2021. Unfortunately, there are no available images for this location after 2021 because Senitnel-1B, the acquisition platform for this study area, was taken out of service at the end of 2021. The dataset consists of 90 images, where each image was manually annotated to provide the ground truth label that can be used to train the model to accurately identify water bodies in the SAR imagery. It was split into 70 images for training and 20 images for validation to assess the model's performance on unseen data.
+The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar (SAR) imagery from 2019 to 2021. Unfortunately, no images beyond 2021 were available for this specific location due to the discontinuation of Senitnel-1B, the acquisition platform used in this study area, at the end of 2021.  The dataset comprised a total of  90 images, each of which was manually annotated to establish the ground truth labels necessary for training the model to accurately identify water bodies in the SAR imagery. It was divided into 70 images for training and 20 images for validation to assess the model's performance on previously unseen data. It's worth mentioning that the images did not undergo speckle filtering or radiometric terrain correction. 
 
-It is important to note that neither speckle filtering nor radiometric terrain correction was performed on the images. creating four different datasets to facilitate the segmentation task. To determine the optimal combination of SAR imagery, polarization information, and terrain features for training, the models were trained on these four different dataset variations: 
+
+To determine the optimal combination of SAR imagery, polarization information, and terrain features for training, the models were trained on these four different dataset variations: 
 
 #### 1. VV Band Dataset
  This dataset contains SAR images with only the VV (Vertical-Vertical) polarization band. The VV band provides valuable information about the backscatter intensity, which is essential for distinguishing waterbodies from surrounding land cover.
