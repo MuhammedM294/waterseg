@@ -9,7 +9,6 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 - [**Project Description**](#project_des)
 - [**Study Area**](#study_area)
 - [**Datasets**](#dataset)
-- [**Challenges**](#challenge)
 - [**Results Analysis**](#res_analsis)
 - [**Installation**](#install)
 - [**Citing**](#citing)
@@ -78,11 +77,6 @@ To determine the optimal combination of SAR imagery, polarization information, a
  
  The fourth dataset combines the RGB SAR image (with VV, VH, and VV/VH bands) with the DEM data. This dataset provides a comprehensive representation by integrating SAR imagery, polarization information, and terrain features.
  
-
-## Challenges <a name="challenge"></a>
-1. The similarity of intensity values of water bodies and the surrounding land cover of the desert, always leads to the misclassification of many land pixels as water bodies. This is the main reason for integrating the elevation information. 
-2. Limited training data: The imagery acquisition platform, Sentinel-1B, was taken out of service at the end of 2021. As a result, there have been no available images of the lakes of Toushka since the beginning of 2022.
-3. Annotation Difficulty: SAR imagery is difficult to interpret, so the process of annotating the satellite imagery to prepare the datasets for training and evaluation was challenging and time-consuming.
 
 
 ## Results Analysis <a name="res_analsis"></a>
