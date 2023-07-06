@@ -20,13 +20,17 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 
 ## Project Description <a name="project_des"></a>
 
-The objective of this project is to develop a deep learning model that can accurately identify the water bodies of Toushka Lakes from SAR imagery. The segmentation task involves classifying each pixel in SAR satellite imagery as either water or non-water. This information can be valuable for various applications, such as environmental monitoring, water resource management, and urban planning.
+The objective of this project is to develop a deep learning model that can accurately segment the water bodies of Toushka Lakes from SAR imagery. The segmentation task involves classifying each pixel in SAR satellite imagery as either water or non-water. This information can be valuable for various applications, such as environmental monitoring, water resource management, and urban planning.
 
-The U-Net architecture is chosen for its effectiveness in image segmentation tasks. It consists of an encoder path that captures contextual information and a decoder path that enables precise localization. The PyTorch framework provides a powerful and flexible environment for building and training deep learning models.
+The U-Net architecture is chosen for its effectiveness in image segmentation tasks. The U-Net architecture is widely used and highly effective for image segmentation tasks. It was initially developed for biomedical image segmentation but has since been applied to various other domains. an encoder-decoder structure. It consists of an encoder-decoder structure:
+
+1. The encoder path, also known as the contracting path, is responsible for capturing contextual information from the input image. 
+2. The decoder path, also known as the expansive path, aims to enable precise localization by upsampling the feature maps and recovering the spatial information lost during the encoding process.
+   
 
 ## Study Area <a name="study_area"></a>
 
-The lakes are natural depressions in the Sahara Desert that are filled by overflow from Lake Nasser, the enormous 550-kilometer-long (340-mile) reservoir built on the Nile River. Lake Nasser appears in the 2021 image (far right).The rise and fall of Toshka Lakes depend on multi-year fluctuations in the flow of the Nile. 
+The lakes are natural depressions in the Sahara Desert that are filled by overflow from Lake Nasser, the enormous 550-kilometer-long (340-mile) reservoir built on the Nile River. Lake Nasser appears in the 2021 image (far right). The rise and fall of Toshka Lakes depend on multi-year fluctuations in the flow of the Nile. 
 
 ``Image Date: November 30, 2021``
 
