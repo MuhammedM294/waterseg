@@ -3,7 +3,7 @@
 
 This project aims to perform waterbodies segmentation of Toushka Lakes, a chain of lakes in southern Egypt’s New Valley. The ambitious Toshka Lakes project was designed to provide irrigation for new agricultural developments, and to attract people to the region and away from the dense populations of the Nile Valley itself. 
 
-The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch framework and the U-Net architecture. To determine the most effective integration of SAR imagery, polarization information, and terrain features, the training was performed on four different combinations of the dataset. Each combination aimed to evaluate the impact of specific data sources on the segmentation model's performance. The metrics were compared to identify the combination that yields the best results.
+The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch framework and the U-Net architecture. The challenge is in differentiating between waterbodies and the surrounding land cover of sands due to the similarity in their intensity values. Traditional machine learning techniques failed to effectively distinguish between these classes. To overcome this challenge, the integration of SAR imagery, polarization information, and terrain features was explored using the U-Net architecture and the PyTorch framework. The training was performed on four different combinations of the dataset. Each combination aimed to evaluate the impact of specific data sources on the segmentation model's performance. The metrics were compared to identify the combination that yields the best results.
 ## Table of Contents
 
 - [**Project Description**](#project_des)
