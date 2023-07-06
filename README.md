@@ -20,7 +20,7 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 
 ## Project Description <a name="project_des"></a>
 
-The objective of this project is to develop a deep learning model that can accurately segment the water bodies of Toushka Lakes from SAR imagery. The segmentation task involves classifying each pixel in SAR satellite imagery as either water or non-water. This information can be valuable for various applications, such as environmental monitoring, water resource management, and urban planning.
+The objective of this project is to develop a deep learning model that can accurately segment the water bodies of Toushka Lakes from SAR imagery.SAR data offers valuable information for waterbodies segmentation due to its ability to penetrate cloud cover and capture images regardless of the weather conditions. The segmentation task involves classifying each pixel in SAR satellite imagery as either water or non-water. This information can be valuable for various applications, such as environmental monitoring, water resource management, and urban planning.
 
 The U-Net architecture is chosen for its effectiveness in image segmentation tasks. The U-Net architecture is widely used and highly effective for image segmentation tasks. It was initially developed for biomedical image segmentation but has since been applied to various other domains. an encoder-decoder structure. It consists of an encoder-decoder structure:
 
@@ -43,7 +43,9 @@ The lakes are natural depressions in the Sahara Desert that are filled by overfl
 
 ## Dataset <a name="dataset"></a>
 
-The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar (SAR) imagery 2019-2021. SAR data offers valuable information for waterbodies segmentation due to its ability to penetrate cloud cover and capture images regardless of the weather conditions. The dataset was prepared by preprocessing the SAR imagery and creating four different datasets to facilitate the segmentation task. The datasets are annotated with accurate waterbody boundaries, serving as ground truth for training and evaluation.
+The dataset used in this project consists of Sentinel-1 Synthetic Aperture Radar (SAR) imagery from 2019 to 2021. Unfortunately, there are no available images for this location after 2021 because Senitnel-1B, the acquisition platform for this study area, was taken out of service at the end of 2021. The dataset consists of 90 images, where each image was manually annotated to provide the ground truth label that can be used to train the model to accurately identify water bodies in the SAR imagery. It was split into 70 images for training and 20 images for validation to assess the model's performance on unseen data.
+
+It is important to note that neither speckle filtering nor radiometric terrain correction was performed on the images. creating four different datasets to facilitate the segmentation task. To determine the optimal combination of SAR imagery, polarization information, and terrain features for training, the models were trained on these four different dataset variations: 
 
 #### 1. VV Band Dataset
  This dataset contains SAR images with only the VV (Vertical-Vertical) polarization band. The VV band provides valuable information about the backscatter intensity, which is essential for distinguishing waterbodies from surrounding land cover.
