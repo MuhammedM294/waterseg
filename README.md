@@ -21,7 +21,7 @@ The segmentation task is achieved using Sentinel-1 SAR imagery with the PyTorch 
 
 The objective of this project is to develop a deep learning model that can accurately segment the water bodies of Toushka Lakes from SAR imagery.SAR data offers valuable information for waterbodies segmentation due to its ability to penetrate cloud cover and capture images regardless of the weather conditions. The segmentation task involves classifying each pixel in SAR satellite imagery as either water or non-water. This information can be valuable for various applications, such as environmental monitoring, water resource management, and urban planning.
 
-The U-Net architecture is chosen for its effectiveness in image segmentation tasks. The U-Net architecture is widely used and highly effective for image segmentation tasks. It was initially developed for biomedical image segmentation but has since been applied to various other domains. an encoder-decoder structure. It consists of an encoder-decoder structure:
+The U-Net architecture is chosen for its effectiveness in image segmentation tasks. It was initially developed for biomedical image segmentation but has since been applied to various other domains. It consists of an encoder-decoder structure:
 
 1. The encoder path, also known as the contracting path, is responsible for capturing contextual information from the input image. 
 2. The decoder path, also known as the expansive path, aims to enable precise localization by upsampling the feature maps and recovering the spatial information lost during the encoding process.
