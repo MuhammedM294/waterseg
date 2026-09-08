@@ -5,5 +5,5 @@ numpy==1.24.3
 opencv_python==4.8.1.78
 opencv_python_headless==4.7.0.72
 pandas==2.0.2
-torch==2.2.0
+torch==2.13.0
 torchvision==0.15.2+cu118
